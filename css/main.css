@@ -16,7 +16,7 @@
   --footer-link-color:rgba(255, 255, 255, 0.6);
   --footer-social-color:rgba(255, 255, 255, 0.1);
   --list-info-color:rgba(47, 48, 58, 0.8);
-  --transition:250ms,cubic-bezier(0.4, 0, 0.2, 1);
+  --transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -152,16 +152,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  -webkit-transition: color, var(--transition);
-  transition: color, var(--transition);
+  -webkit-transition: color var(--transition);
+  transition: color var(--transition);
 }
 .header-nav__link:hover {
   color: var(--accent-color);
 }
 .header-nav__link--current {
   color: var(--accent-color);
-  -webkit-transition: color, var(--transition);
-  transition: color, var(--transition);
+  -webkit-transition: color var(--transition);
+  transition: color var(--transition);
 }
 .header-nav__link--current::after {
   content: "";
@@ -201,8 +201,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
-  -webkit-transition: color, var(--transition);
-  transition: color, var(--transition);
+  -webkit-transition: color var(--transition);
+  transition: color var(--transition);
 }
 .header-list__link:hover {
   color: var(--accent-color);
@@ -211,8 +211,8 @@ body {
 .header-list__link-icon {
   fill: var(--subtitle-color);
   margin-right: 10px;
-  -webkit-transition: fill, var(--transition);
-  transition: fill, var(--transition);
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 .header-list__link:hover .header-list__link-icon {
   fill: var(--accent-color);
@@ -279,10 +279,8 @@ body {
   min-width: 200px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color, var(--transition), -webkit-box-shadow;
-  transition: background-color, var(--transition), -webkit-box-shadow;
-  transition: background-color, box-shadow, var(--transition);
-  transition: background-color, box-shadow, var(--transition), -webkit-box-shadow;
+  -webkit-transition: background-color box-shadowv var(--transition);
+  transition: background-color box-shadowv var(--transition);
 }
 .button:hover {
   background-color: var(--hover-butom-color);
@@ -339,8 +337,8 @@ body {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-  -webkit-transition: background-color, var(--transition);
-  transition: background-color, var(--transition);
+  -webkit-transition: background-color var(--transition);
+  transition: background-color var(--transition);
 }
 .modal-button:hover, .modal-button:focus {
   background-color: var(--hover-butom-color);
@@ -503,8 +501,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: background-color, var(--transition);
-  transition: background-color, var(--transition);
+  -webkit-transition: background-color var(--transition);
+  transition: background-color var(--transition);
 }
 .team-link__net:hover, .team-link__net:focus {
   background-color: var(--accent-color);
@@ -513,10 +511,8 @@ img {
 .team-link__icon {
   margin: 12px;
   fill: var(--clients-icon-color);
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 .team-link__net:hover .team-link__icon, .team-link__net:focus .team-link__icon {
   fill: var(--current-color);
@@ -548,8 +544,8 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  -webkit-transition: border-color, var(--transition);
-  transition: border-color, var(--transition);
+  -webkit-transition: border-color var(--transition);
+  transition: border-color var(--transition);
 }
 .clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-color);
@@ -561,8 +557,8 @@ img {
 
 .clients-list__icon {
   fill: var(--clients-icon-color);
-  -webkit-transition: fill, var(--transition);
-  transition: fill, var(--transition);
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 .clients-list__link:hover .clients-list__icon, .clients-list__link:focus .clients-list__icon {
   fill: var(--accent-color);
@@ -595,10 +591,10 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   border: 0px;
-  -webkit-transition: color, background-color, var(--transition), -webkit-box-shadow;
-  transition: color, background-color, var(--transition), -webkit-box-shadow;
-  transition: color, background-color, box-shadow, var(--transition);
-  transition: color, background-color, box-shadow, var(--transition), -webkit-box-shadow;
+  -webkit-transition: color, background-color, -webkit-box-shadow var(--transition);
+  transition: color, background-color, -webkit-box-shadow var(--transition);
+  transition: color, background-color, box-shadow var(--transition);
+  transition: color, background-color, box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
 .portfolio-button__item:hover, .portfolio-button__item:active {
   color: var(--portfolio-buton-color);
@@ -642,8 +638,8 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--footer-link-color);
-  -webkit-transition: color, var(--transition);
-  transition: color, var(--transition);
+  -webkit-transition: color var(--transition);
+  transition: color var(--transition);
 }
 .footer-list__link:hover {
   color: var(--accent-color);
@@ -673,8 +669,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  -webkit-transition: color, var(--transition);
-  transition: color, var(--transition);
+  -webkit-transition: color var(--transition);
+  transition: color var(--transition);
 }
 .footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--accent-color);
@@ -682,8 +678,8 @@ img {
 
 .footer-social__icon {
   fill: var(--current-color);
-  -webkit-transition: fill, var(--transition);
-  transition: fill, var(--transition);
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 .footer-social__link:hover .footer-social__icon, .footer-social__link:focus .footer-social__icon {
   fill: var(--current-color);
@@ -774,10 +770,10 @@ img {
 }
 
 .portfolio-img__list {
-  -webkit-transition-property: var(--transition), -webkit-box-shadow;
-  transition-property: var(--transition), -webkit-box-shadow;
-  transition-property: box-shadow, var(--transition);
-  transition-property: box-shadow, var(--transition), -webkit-box-shadow;
+  -webkit-transition-property: -webkit-box-shadow var(--transition);
+  transition-property: -webkit-box-shadow var(--transition);
+  transition-property: box-shadow var(--transition);
+  transition-property: box-shadow var(--transition), -webkit-box-shadow var(--transition);
   cursor: pointer;
 }
 .portfolio-img__list:hover {
@@ -807,10 +803,10 @@ img {
   background-color: var(--portfolio-overlay-color);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: var(--transition), -webkit-transform;
-  transition: var(--transition), -webkit-transform;
-  transition: transform, var(--transition);
-  transition: transform, var(--transition), -webkit-transform;
+  -webkit-transition: -webkit-transform var(--transition);
+  transition: -webkit-transform var(--transition);
+  transition: transform var(--transition);
+  transition: transform var(--transition), -webkit-transform var(--transition);
 }
 .portfolio-img__list:hover .portfolio-img__overlay {
   -webkit-transform: translateY(0);
@@ -875,8 +871,8 @@ img {
   background: var(--current-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-transition: fill, var(--transition);
-  transition: fill, var(--transition);
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 .modal-close:hover, .modal-close:focus {
   fill: var(--accent-color);
@@ -919,8 +915,8 @@ img {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  -webkit-transition-property: border-color, var(--transition);
-  transition-property: border-color, var(--transition);
+  -webkit-transition-property: border-color var(--transition);
+  transition-property: border-color var(--transition);
 }
 .user-field:hover, .user-field:focus {
   border-color: var(--accent-color);
@@ -934,8 +930,8 @@ img {
   position: absolute;
   top: 11px;
   left: 12px;
-  -webkit-transition-property: fill, var(--transition);
-  transition-property: fill, var(--transition);
+  -webkit-transition-property: fill var(--transition);
+  transition-property: fill var(--transition);
 }
 .user-field:hover ~ .modal-icons, .user-field:focus ~ .modal-icons {
   fill: var(--accent-color);
@@ -955,8 +951,8 @@ img {
   overflow: hidden;
   outline: none;
   cursor: pointer;
-  -webkit-transition-property: border-color, var(--transition);
-  transition-property: border-color, var(--transition);
+  -webkit-transition-property: border-color var(--transition);
+  transition-property: border-color var(--transition);
 }
 .user-textarea:hover, .user-textarea:focus {
   border-color: var(--accent-color);
@@ -1053,8 +1049,8 @@ img {
   border: 2px solid var(--accent-color);
   border-radius: 2px;
   opacity: 0;
-  -webkit-transition: opacity, var(--transition);
-  transition: opacity, var(--transition);
+  -webkit-transition: opacity var(--transition);
+  transition: opacity var(--transition);
 }
 .checkbox-input:checked ~ .icon-check {
   opacity: 1;

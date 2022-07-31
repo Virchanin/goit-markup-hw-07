@@ -30,7 +30,7 @@
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    transition-property: border-color,var(--transition);
+    transition-property: border-color var(--transition);
 
     &:hover,
     &:focus{
@@ -46,7 +46,7 @@
     position: absolute;
     top: 11px;
     left: 12px;
-    transition-property: fill,var(--transition);
+    transition-property: fill var(--transition);
 
     .user-field:hover ~ &,
     .user-field:focus ~ &{
@@ -68,7 +68,7 @@
     overflow: hidden;
     outline: none;
     cursor: pointer;
-    transition-property: border-color,var(--transition);
+    transition-property: border-color var(--transition);
 
     &:hover,
     &:focus{

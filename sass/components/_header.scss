@@ -36,7 +36,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--text-color);
-    transition: color,var(--transition);
+    transition: color var(--transition);
 
     &:hover{
         color:var(--accent-color);
@@ -44,7 +44,7 @@
 
     &--current{
         color: var(--accent-color);
-    transition: color,var(--transition);
+    transition: color var(--transition);
     }
 
     &--current::after{
@@ -78,7 +78,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--subtitle-color);
-    transition: color,var(--transition);
+    transition: color var(--transition);
 
     &:hover{
         color: var(--accent-color)
@@ -88,7 +88,7 @@
 .header-list__link-icon{
     fill:var(--subtitle-color);
     margin-right: 10px;
-    transition: fill,var(--transition); 
+    transition: fill var(--transition); 
 
     .header-list__link:hover &{
         fill:var(--accent-color)

@@ -10,7 +10,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: color,var(--transition);
+    transition: color var(--transition);
 
     &:hover,
     &:focus{
@@ -20,7 +20,7 @@
 
 .footer-social__icon{
     fill:var(--current-color);
-    transition: fill,var(--transition);
+    transition: fill var(--transition);
 
     .footer-social__link:hover &,
     .footer-social__link:focus &{

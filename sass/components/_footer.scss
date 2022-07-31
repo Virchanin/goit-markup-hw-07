@@ -31,7 +31,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color:var( --footer-link-color);
-    transition:color,var(--transition);
+    transition:color var(--transition);
 
     &:hover{
         color:var(--accent-color);

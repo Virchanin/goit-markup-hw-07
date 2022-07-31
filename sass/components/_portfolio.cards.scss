@@ -15,7 +15,7 @@
 }
 
 .portfolio-img__list{
-    transition-property: box-shadow,var(--transition);
+    transition-property: box-shadow var(--transition);
     cursor: pointer;
 
     &:hover{
@@ -44,7 +44,7 @@
     padding: 63px 24px;
     background-color:var(--portfolio-overlay-color);
     transform: translateY(100%);
-    transition: transform,var(--transition);
+    transition: transform var(--transition);
 
     .portfolio-img__list:hover &{
         transform: translateY(0);

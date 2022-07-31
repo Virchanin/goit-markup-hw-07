@@ -58,7 +58,7 @@ img{
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    transition: background-color,var(--transition);
+    transition: background-color var(--transition);
 
     &:hover,
     &:focus{
@@ -69,8 +69,7 @@ img{
 .team-link__icon{
     margin: 12px;
     fill:var(--clients-icon-color);
-    transition-property: fill;
-    transition:var(--transition);
+    transition: fill var(--transition);
 
     .team-link__net:hover &,
     .team-link__net:focus &{

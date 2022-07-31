@@ -42,8 +42,8 @@
   background: var(--current-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-transition: fill, var(--transition);
-  transition: fill, var(--transition);
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 .modal-close:hover, .modal-close:focus {
   fill: var(--accent-color);

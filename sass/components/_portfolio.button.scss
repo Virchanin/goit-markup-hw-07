@@ -21,7 +21,7 @@
     border-radius: 4px;
     padding: 6px 22px;
     border: 0px;
-    transition: color,background-color,box-shadow,var(--transition);
+    transition: color,background-color,box-shadow var(--transition);
 
     &:hover,
     &:active{
